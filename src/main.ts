@@ -42,7 +42,7 @@ let evh: Guitarist = {
 }
 
 let JP: Guitarist = {
-    name: 'jimmiklj',
+    name: 'jdarr',
     active: false,
     albums: [ 'adaasdadasdasdhdk','hill']
 }
