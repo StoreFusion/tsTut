@@ -31,8 +31,8 @@ const exampleObj = {
 
 type Guitarist = {
     name: string,
-    active: boolean,
-    albums: (string|number)[],
+    active?: boolean,
+    albums?: (string|number)[],
 }
 
 let evh: Guitarist = {
@@ -51,3 +51,9 @@ console.log(evh);
 console.log(JP);
 
 evh = JP;
+
+const greetGuitarist = (fellow: Guitarist) => {
+    return `hello ${fellow.name}`;
+}
+
+console.log(greetGuitarist(JP));
