@@ -26,10 +26,29 @@ let evh = {
     albums: ['adasdhdk', 'hill']
 };
 let JP = {
-    name: 'jimmiklj',
+    name: 'jdarr',
     active: false,
     albums: ['adaasdadasdasdhdk', 'hill']
 };
 console.log(evh);
 console.log(JP);
 evh = JP;
+const greetGuitarist = (guitarist) => {
+    if (guitarist.name) {
+        return `hello ${guitarist.name.toUpperCase()}`;
+    }
+    return 'Helloo';
+};
+console.log(greetGuitarist(JP));
+// Enums
+// unlike most Typescript features, enums are not a type-level addition to js but added to the language and runtime.
+var Grade;
+(function (Grade) {
+    Grade[Grade["U"] = 1] = "U";
+    Grade[Grade["D"] = 2] = "D";
+    Grade[Grade["C"] = 3] = "C";
+    Grade[Grade["B"] = 4] = "B";
+    Grade[Grade["A"] = 5] = "A";
+})(Grade || (Grade = {}));
+console.log("a");
+console.log(Grade.B);

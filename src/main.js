@@ -32,7 +32,10 @@ var JP = {
 console.log(evh);
 console.log(JP);
 evh = JP;
-var greetGuitarist = function (fellow) {
-    return "hello ".concat(fellow.name);
+var greetGuitarist = function (guitarist) {
+    if (guitarist.name) {
+        return "hello ".concat(guitarist.name.toUpperCase());
+    }
+    return 'Helloo';
 };
 console.log(greetGuitarist(JP));

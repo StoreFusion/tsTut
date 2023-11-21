@@ -52,8 +52,29 @@ console.log(JP);
 
 evh = JP;
 
-const greetGuitarist = (fellow: Guitarist) => {
-    return `hello ${fellow.name}`;
+const greetGuitarist = (guitarist: Guitarist) => {
+    if(guitarist.name){
+        return `hello ${guitarist.name.toUpperCase()}`;
+    }
+    return 'Helloo';
 }
 
 console.log(greetGuitarist(JP));
+
+
+// Enums
+// unlike most Typescript features, enums are not a type-level addition to js but added to the language and runtime.
+
+
+enum Grade {
+    U = 1,
+    D,
+    C,
+    B,
+    A,
+}
+
+console.log("a");
+console.log(Grade.B);
+
+ 
