@@ -119,3 +119,21 @@ numberOrString("asd");
 // type assertions and type casting
 // its basically you the coding using telling the typescript compiler that you know more about the types, 
 // so it needs to listen to you.
+// tuples: (Just a refresher) 
+let empId = 1;
+let empname = "Steve";
+// Tuple type variable
+let employee = [1, 'Steve', 2];
+console.log("value here:" + employee);
+// a tuple type can include multiple data types as shown below:
+let person = [1, 'a name', true];
+let user; // declare tuple variable
+user = ["the dude", 1, 2, true];
+console.log(user);
+console.log(person);
+// you can declare array of tuples also:
+let check;
+check = [['sardar', 1], ['name2', 2]];
+console.log(check[0][0]);
+check.push(['bill', 3]);
+console.log(check);
